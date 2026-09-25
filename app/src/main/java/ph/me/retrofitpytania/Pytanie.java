@@ -12,11 +12,14 @@ public class Pytanie {
     @SerializedName("odp3")
     private String odp_c;
 
-    public Pytanie(String trescPytania, String odp_a, String odp_b, String odp_c) {
+    private int poprawna;
+
+    public Pytanie(String trescPytania, String odp_a, String odp_b, String odp_c, int poprawna) {
         this.trescPytania = trescPytania;
         this.odp_a = odp_a;
         this.odp_b = odp_b;
         this.odp_c = odp_c;
+        this.poprawna = poprawna;
     }
 
     public String getTrescPytania() {
